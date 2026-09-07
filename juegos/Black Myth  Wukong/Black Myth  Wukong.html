@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Myth: Wukong</title>
+  <link rel="stylesheet" href="../../CSS/estilojuego.css">
+  <link rel="shortcut icon" href="../../IMG/Greenericon.png" type="image/x-icon">
+</head>
+<style>
+  .buttonjuego{
+  color: #00f05a;
+  padding: 10px 20px 10px 20px;
+  margin: 1.5rem;
+  border-radius: 20px;
+  background-color: #0b1a12;
+}
+
+</style>
+<body onload="girar()"> 
+    <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../../tienda.html">Tienda</a>
+    </nav>
+
+    <div>
+      <img src="img/Greener.png" alt="">
+    </div>
+
+    <nav>
+    <a href="../../quienesomos.html">¿Quienes Somos?</a>
+    <a href="Black Myth  Wukong.html" class="buttonjuego">Black Myth: Wukong</a>
+    </nav> 
+  </header>
+  <hr>
+  <main>
+  <aside>
+    <p>  Black Myth: Wukong es un RPG de acción inspirado en la mitología china. Encarnarás al Predestinado, que ha de embarcarse en un viaje repleto de peligros y maravillas para descubrir la verdad oculta acerca de una gloriosa leyenda del pasado.  <br>
+<span>Reseñas de España:</span>
+Muy positivas (2.800) <br>
+<span>Fecha de lanzamiento:</span>
+19 AGO 2024<br>
+<span>Desarrollador:</span>Game Science <br>	
+<span>Editor:</span> Game Science<br>
+</p>
+<br>
+    <div>
+      <p>Precio s/xxx</p>
+      <button>Comprar</button>
+    </div>
+  </aside>
+  
+  <section>
+    <img id="img" src="img/img1.jpg" alt="">
+  </section>
+  </main>
+
+  
+<footer>
+  <img src="./IMG/Greener.png" alt="">
+  <div>
+    <a href="">Acerca de</a>
+    <a href="">Soporte</a>
+    <a href="">Terminos</a>
+    <a href="">Privacidad</a>
+  </div>
+
+  <div class="redesSociales">
+    <a href="https://www.instagram.com/" target="_blank">
+      <img src="../../IMG/INSTAGRAM.png" alt="">
+    </a>
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="../../IMG/FACEBOOK.png" alt="">
+    </a>
+    <a href="https://discord.com/" target="_blank">
+      <img src="../../IMG/DISCORD.png" alt="">
+    </a>
+  </div>
+  <p>© 2025 Greener. Todos los derechos reservados.</p>
+
+</footer>
+
+</body>
+<script>
+
+var i=0;
+function girar()
+    {
+        i++;
+        if(i>5) i=1;
+        document.getElementById("img").setAttribute("src","img/img"+i+".jpg");
+        setTimeout("girar()",3000);
+    }
+
+    document.body.setAttribute("onload","girar()");</script>
+</html>
